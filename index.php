@@ -3,8 +3,7 @@
 // Make everything in the vendor folder available to use
 require 'vendor/autoload.php';
 
-// Insantiate (create instance of) Plates library
-$plates = new League\Plates\Engine('app/templates');
+
 
 // Load appropriate page
 
@@ -24,7 +23,8 @@ switch($page) {
 	// Home page
 	case 'landing':
 	case 'register':
-		echo $plates->render('landing');
+		require 'app/controllers/LandingController.php';
+		$controller = new LandingController();
 	break;
 
 	// About page
@@ -52,4 +52,6 @@ switch($page) {
 	break;
 
 }
+
+$controller->buildHTML();
 
