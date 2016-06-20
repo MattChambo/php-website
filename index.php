@@ -1,5 +1,6 @@
 <?php
 
+// Must be first thing on index file
 session_start();
 
 // Make everything in the vendor folder available to use
