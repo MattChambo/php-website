@@ -9,7 +9,7 @@
 
 <p><?= $post['description'] ?></p>
 
-<img src="img/uploads/highres/<?= $post['image'] ?>" alt="">
+<img src="img/uploads/original/<?= $post['image'] ?>" alt="">
 
 <ul>
 	<li>Post Created: <?= $post['created_at'] ?></li>
