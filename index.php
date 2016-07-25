@@ -72,6 +72,11 @@ switch($page) {
 		$controller = new EditCommentController($dbc);
 	break;
 
+	case 'edit-post':
+		require 'app/controllers/EditPostController.php';
+		$controller = new EditPostController($dbc);
+	break;
+
 	default:
 		echo $plates->render('error404');
 	break;
