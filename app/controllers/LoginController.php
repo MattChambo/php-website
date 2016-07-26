@@ -7,6 +7,9 @@ class LogInController extends PageController {
 		// Make sure the PageController still runs
 		parent::__construct();
 
+
+		$this->mustBeLoggedOut();
+
 		// Save the database connection
 		$this->dbc = $dbc;
 

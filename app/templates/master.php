@@ -11,10 +11,10 @@
     <script src="https://use.fontawesome.com/c9a6fcc362.js"></script>
   </head>
 
+  
+
+
   <?php echo $this->section('content') ?>
-
-
-
 
   <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
