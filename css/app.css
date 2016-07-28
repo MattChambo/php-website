@@ -119,3 +119,7 @@ body#login-page {
 #stream-page {
   background-color: #eee;
 }
+
+#delete-post-options {
+  display: none;
+}

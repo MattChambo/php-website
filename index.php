@@ -77,6 +77,13 @@ switch($page) {
 		$controller = new EditPostController($dbc);
 	break;
 
+	case 'logout':
+		unset($_SESSION['id']);
+		unset($_SESSION['privilege']);
+		header('Location: index.php');
+		
+	break;
+
 	default:
 		echo $plates->render('error404');
 	break;
